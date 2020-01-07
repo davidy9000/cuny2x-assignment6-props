@@ -28,7 +28,6 @@ class ContactCard extends Component {
 ContactCard.propTypes = {
     name: PropTypes.string.isRequired,
     mobileNumber: PropTypes.number.isRequired,
-    workNumber: PropTypes.number.isRequired,
     email: PropTypes.string.isRequired
 };
 
@@ -81,7 +80,7 @@ function App() {
             <div className="Contacts">
                 <div><ContactCard name="Bob Chen" mobileNumber={1234567890} workNumber={2345678901} email="bob@bob.com"/></div>
                 <div><ContactCard name="John Doe" mobileNumber={3942349802} workNumber={4372049723} email="john.doe@aye.com"/></div>
-                <div><ContactCard name="Jane Lee" mobileNumber={1573085130} workNumber={9483204384} email="doe.jane9@ree.com"/></div>
+                <div><ContactCard name="Jane Lee" mobileNumber={1573085130} email="doe.jane9@ree.com"/></div>
             </div>
             <br/>
             <div className="Decrements">
