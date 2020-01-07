@@ -42,14 +42,15 @@ class Decrementer extends Component {
         // this.decrementNumber = this.decrementNumber.bind(this)
         // this.incrementNumber = this.incrementNumber.bind(this)
     };
-
+    
+    //  arrow function handles binding
     decrementNumber = () => {
         if(this.state.number - 1 >= 0){
             this.setState(
                 {number: this.state.number -1}
             );
             if(this.state.number-1 === 0){
-                alert("idshfi");
+                alert("Cannot be less than zero");
             }
         }
     }
